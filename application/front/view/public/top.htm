@@ -1,0 +1,99 @@
+<header id="header" class="header-fixed">
+            <div class="container">
+                <ul class="head-list">
+                    <li class="left tel">
+                        <img src="__FRONT__/picture/1514354107.png" alt="">
+                        <span>
+                            全国咨询热线：
+                        </span>
+                        <em>
+                            400-123-4567
+                        </em>
+                    </li>
+                    <li class="right">
+                        <ul>
+                            <li>
+                                <img src="__FRONT__/picture/1514355047.png" alt="一流的服务">
+                                <span>
+                                    一流的服务
+                                </span>
+                            </li>
+                            <li>
+                                <img src="__FRONT__/picture/1514354958.png" alt="透明的价格">
+                                <span>
+                                    透明的价格
+                                </span>
+                            </li>
+                            <li>
+                                <img src="__FRONT__/picture/1514354817.png" alt="重信守誉">
+                                <span>
+                                    重信守誉
+                                </span>
+                            </li>
+                            <li>
+                                <img src="__FRONT__/picture/1514354461.png" alt="优质的苗木">
+                                <span>
+                                    优质的苗木
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <nav class="navbar navbar-default met-nav navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle hamburger hamburger-close collapsed"
+                        data-target="#navbar-default-collapse" data-toggle="collapse">
+                            <span class="sr-only">
+                                Toggle navigation
+                            </span>
+                            <span class="hamburger-bar">
+                            </span>
+                        </button>
+                        <a href="#"​ class="navbar-brand navbar-logo vertical-align" title="响应式绿化花木果苗类织梦模板(自适应手机端)">
+                            <h1 class='hide'>
+                                响应式绿化花木果苗类织梦模板(自适应手机端)
+                            </h1>
+                            <div class="vertical-align-middle">
+                                <img src="__FRONT__/picture/logo.png" alt="响应式绿化花木果苗类织梦模板(自适应手机端)" title="响应式绿化花木果苗类织梦模板(自适应手机端)"
+                                />
+                            </div>
+                        </a>
+                        <h2 class='hide'>
+                        </h2>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-collapse-toolbar" id="navbar-default-collapse">
+                        <ul class="nav navbar-nav navbar-right navlist">
+                            <li>
+                                <a href="http://localhost/bick/public/index.php/front/"​ title="网站首页" class="link">
+                                    网站首页
+                                </a>
+                            </li>
+                             {volist name="cat" id="pid_name"}
+                            <li class="dropdown margin-left-20">
+                                <a class="dropdown-toggle link " data-toggle="dropdown" data-hover="dropdown" aria-expanded="false" href="http://localhost/bick/public/index.php/front/{$pid_name.enname}/index/id/{$pid_name.id}">
+                                   {$pid_name.cat_name}
+                                   {if condition="$pid_name['son_name'] neq 0"}
+                                    <span class="caret">
+                                        {/if}
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right bullet">
+                                    {volist name="$pid_name['son_name']" id="son"}
+                                    <li>
+                                        <a href="http://localhost/bick/public/index.php/front/{$son.enname}/index/id/{$son.id}"​ class="" title="{$son.cat_name}">
+                                            {$son.cat_name}
+                                        </a>
+                                    </li>
+{/volist}
+                                </ul>
+                            </li>
+                          {/volist}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>

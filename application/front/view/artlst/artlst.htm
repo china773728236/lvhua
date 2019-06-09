@@ -1,0 +1,161 @@
+﻿<!DOCTYPE HTML>
+<html>
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>
+            新闻中心_响应式绿化花木果苗类网站模板(自适应手机端)
+        </title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+		<meta name="generator" content="" data-variable="/,cn,10001,,10001,res032"/>
+        <link rel='stylesheet' href='__FRONT__/css/index.css'>
+    </head>
+    
+    <body class="met-navfixed">
+        <!--[if lte IE 8]>
+            <div class="text-center padding-top-50 padding-bottom-50 bg-blue-grey-100">
+                <p class="browserupgrade font-size-18">
+                    你正在使用一个
+                    <strong>
+                        过时
+                    </strong>
+                    的浏览器。请
+                    <a href="#"​ target="_blank">
+                        升级您的浏览器
+                    </a>
+                    ，以提高您的体验。
+                </p>
+            </div>
+        <![endif]-->
+        {include file="public/top" /}
+        <div class="met-banner banner-ny-h" data-height='' style=''>
+            <div class="slick-slide">
+                <img class="cover-image" src="__FRONT__/picture/banner14.jpg" sizes="(max-width: 767px) 767px" alt="新闻中心">
+            </div>
+        </div>
+        <section class="met-news animsition ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 met-news-body">
+                        <div class="row">
+                            <div class="met-news-list">
+                                <ul class="met-page-ajax" data-scale=''>
+                                    {volist name="res" id="news"}
+                                    <li>
+                                        <h4>
+                                            <a href="http://localhost/bick/public/index.php/front/news_show/index/id/{$news.art_id}"​ title="金叶榆行情下跌，来源于“跟风”太紧！"
+                                            target='_self'>
+                                                {$news.art_title}
+                                            </a>
+                                        </h4>
+                                        <p class="des">
+                                            {$news.art_describe}...
+                                        </p>
+                                        <p class="info">
+                                            <span>
+                                                {$news.art_time}
+                                            </span>
+                                            <span>
+                                                {$news.art_author}
+                                            </span>
+                                            <span>
+                                                <i class="icon wb-eye margin-right-5" aria-hidden="true">
+                                                </i>
+                                                {$news.art_look}
+                                            </span>
+                                        </p>
+                                    </li>
+                                    {/volist}
+                                </ul>
+                                <div>
+                                    <div class='met_pager'>
+                                        <span class='PreSpan'>
+                                            上一页
+                                        </span>
+                                        <a class="Ahover">
+                                            1
+                                        </a>
+                                        <a href='list_14_2.html'>
+                                            2
+                                        </a>
+                                        <a href='list_14_2.html'>
+                                            下一页
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="met-news-bar">
+                                <form name="formsearch" action="{:url('search/index')}" method="get">
+                                    
+                                    <div class="form-group">
+                                        <div class="input-search">
+                                            <button type="submit" class="input-search-btn">
+                                                <i class="icon wb-search" aria-hidden="true">
+                                                </i>
+                                            </button>
+                                            <input type="text" class="form-control" name="keywords" placeholder="Search">
+                                        </div>
+                                    </div>
+                                </form>
+                                <!--string(4) "news" -->
+                                <div class="recommend news-list-md">
+                                    <h3>
+                                        为您推荐
+                                    </h3>
+                                    <ul class="list-group list-group-bordered">
+                                        <li class="list-group-item">
+                                            <a href="newsshow.html"​ title="金叶榆行情下跌，来源于“跟风”太紧！"
+                                            target='_self'>
+                                                金叶榆行情下跌，来源于“跟风”太紧！
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="newsshow.html"​ title="有关桃树春季管理技术要点"
+                                            target='_self'>
+                                                有关桃树春季管理技术要点
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="newsshow.html"​ title="种植葡萄苗所需的基本知识" target='_self'>
+                                                种植葡萄苗所需的基本知识
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="newsshow.html"​ title="如何科学补充板栗树养分？" target='_self'>
+                                                如何科学补充板栗树养分？
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="column">
+                                    <li>
+                                        <a href="news.html"​ title="所有文章" target='_self'>
+                                            所有文章
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="news.html"​>
+                                            技术要领
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="news.html"​>
+                                            行业资讯
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       {include file="public/footer" /}
